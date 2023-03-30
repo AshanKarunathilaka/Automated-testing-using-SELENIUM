@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <test verbose="2" preserve-order="true" name="D:/Assignment/assignment">
+        <classes>
+            <class name="org.example.MainTest">
+            </class>
+            <class name="org.example.SelectTest">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="search"/>
+                    <include name="selectApple"/>
+                    <include name="selectFirstItem"/>
+                </methods>
+            </class>
+            <class name="org.example.PurchaseTest">
+                <methods>
+                    <include name="selectModel"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorage"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetic"/>
+                    <include name="itemName"/>
+                    <include name="itemPrice"/>
+                    <include name="itemCondition"/>
+                    <include name="itemQuantity"/>
+                    <include name="addItemToCart"/>
+                    <include name="checkItemName"/>
+                    <include name="checkItemPrice"/>
+                    <include name="checkQuantity"/>
+                    <include name="shippingCost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
